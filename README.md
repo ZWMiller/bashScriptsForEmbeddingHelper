@@ -14,7 +14,7 @@ sequence to make a file list for each FSET.
 
 3) Edit doEmbeddingMakerQA.C to have all the correct settings. This scheme
 assumes that doEmbeddingMakerQA.C is set to work on mudst.list, that
-isSimulation = kFALSE, and the outputFileName is "qa\\_real\\_2014\\_P15ic.root"
+isSimulation = kFALSE, and the outputFileName is "qa\_real\_2014\_P15ic.root"
 where the year and library are changed to match the current embedding request.
 
 4) Edit makeDoEmbeddingMaker.sh to have the correct library and year name, as
@@ -29,6 +29,6 @@ selections)
 
 7) ./runMultidoEmbeddingQAMaker.sh
 
-8) hadd qa\\_embedding\\_2014\\_P15ic.root qa\\_embedding\\_2014\\_P15ic\\_*.root
+8) hadd qa\_embedding\_2014\_P15ic.root qa\_embedding\_2014\_P15ic\_\*.root
 
 9) edit drawEmbeddingQAMaker.C; root4star -l -b -q drawEmbeddingQAMaker.C
