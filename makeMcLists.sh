@@ -6,4 +6,5 @@ do
     rm minimc${i}.list
   fi
 ls /global/projecta/projectdirs/starprod/embedding/AuAu_200_production_2014/PositronBHT3_20${i}_20161901/P15ic.SL15e_embed/2014/*/*.minimc.root > minimc${i}.list 
+echo "minimc${i}.list Made"
 done 
