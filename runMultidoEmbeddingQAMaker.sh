@@ -15,6 +15,7 @@ do
     rm qa_embedding_${year}_${library}_${i}.root 
   fi
   root4star -l -b -q doEmbeddingQAMaker${i}.C &> qaMC${i}.log &
+  echo "Job Submitted: doEmbeddingQAMaker${i}.C (minimc) with logFile qaMC${i}.log"
 done
 
 if [ $runMuDst -eq 1 ]; then
@@ -25,4 +26,5 @@ if [ $runMuDst -eq 1 ]; then
     rm qa_real_${year}_${library}.root 
   fi
   root4star -l -b -q doEmbeddingQAMaker.C &> qaREAL.log &
+  echo "Job Submitted: doEmbeddingQAMaker.C (mudst) with logFile qaREAL.log"
 fi
