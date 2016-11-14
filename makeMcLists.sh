@@ -5,6 +5,11 @@ do
   if [ -e minimc${i}.list ]; then
     rm minimc${i}.list
   fi
-ls /global/projecta/projectdirs/starprod/embedding/AuAu_200_production_2014/PositronBHT3_20${i}_20161901/P15ic.SL15e_embed/2014/*/*.minimc.root > minimc${i}.list 
+  if [ $i -lt 10 ]; then
+    j="0${i}"
+  else
+    j="${i}"
+  fi
+ls /global/projecta/projectdirs/starprod/embedding/AuAu_200_production_2014/PositronBHT3_2${j}_20161901/P15ic.SL15e_embed/2014/*/*.minimc.root > minimc${i}.list 
 echo "minimc${i}.list Made"
 done 

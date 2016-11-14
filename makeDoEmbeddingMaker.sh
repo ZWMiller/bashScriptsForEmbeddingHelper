@@ -1,6 +1,6 @@
 #!/bin/bash
 year=2014
-library="p15ic"
+library="P15ic"
 
 for i in `seq 0 5`;
 do
